@@ -1,13 +1,64 @@
-html{
-    box-sizing: border-box;
+@import'vars';
+@import'global';
+
+// HEADER
+
+.header__top-inner{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
 }
-*, 
-*::before, 
-*::after{
-    box-sizing: inherit;
+
+.header__text{
+    margin-left: auto;
+    margin-right: 50px;
+    font-size: 15px;
+    color: $text;
 }
-body{
-    .box{
-        display: flex;
+
+.header__text span{
+    color: $red;
+}
+
+.header__btn{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding: 9px;
+    width: 72px;
+    border-radius: 4px;
+}
+
+.header__btn-login{
+    background-color: $green;
+    margin-right: 7px;
+}
+.header__btn-register{
+    background-color: $red;
+}
+
+.header__menu{
+    background-color: $bg;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.menu__list{
+    li{
+        display: inline-block;
+        & + li{ 
+          margin-left: 32px;
+        }
     }
+
+    a{
+        color: #fff;
+        font-size: 14px;
+    }
+
 }
